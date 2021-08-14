@@ -1,10 +1,15 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
     return "Hello! this is the main page <h1>Hello<h1>"
+
+@app.route("/weather")
+def weather():
+    return render_template("weather.html")
+
 
 if __name__ == "__main__":
     app.run(debug=True)
