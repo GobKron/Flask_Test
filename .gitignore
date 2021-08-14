@@ -1,0 +1,13 @@
+#Virtual environment
+venv/
+
+# Flask
+instance/*
+!instance/.gitignore
+.webassests-cache
+
+# Flask.Python Stack
+# Byte compiled / omptimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
